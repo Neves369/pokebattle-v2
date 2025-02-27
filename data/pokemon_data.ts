@@ -250,6 +250,7 @@ const pokemon_data: any = [
     {
       id: 9,
       label: "Whiscash",
+      size: "small",
       front: require("../assets/images/pokemon/whiscash.gif"),
       back: require("../assets/images/pokemon/whiscash-back.gif"),
       sprite: require("../assets/images/pokemon/whiscash-small.png"),
@@ -280,6 +281,7 @@ const pokemon_data: any = [
     {
       id: 10,
       label: "Honchkrow",
+      size: "small",
       front: require("../assets/images/pokemon/honchkrow.gif"),
       back: require("../assets/images/pokemon/honchkrow-back.gif"),
       sprite: require("../assets/images/pokemon/honchkrow-small.png"),
@@ -311,6 +313,7 @@ const pokemon_data: any = [
     {
       id: 11,
       label: "Mismagius",
+      size: "medium",
       front: require("../assets/images/pokemon/mismagius.gif"),
       back: require("../assets/images/pokemon/mismagius-back.gif"),
       sprite: require("../assets/images/pokemon/mismagius-small.png"),
@@ -342,6 +345,7 @@ const pokemon_data: any = [
     {
       id: 12,
       label: "Abomasnow",
+      size: "medium",
       front: require("../assets/images/pokemon/abomasnow.gif"),
       back: require("../assets/images/pokemon/abomasnow-back.gif"),
       sprite: require("../assets/images/pokemon/abomasnow-small.png"),
@@ -434,6 +438,7 @@ const pokemon_data: any = [
     {
       id: 15,
       label: "Tyranitar",
+      size: "medium",
       front: require("../assets/images/pokemon/tyranitar.gif"),
       back: require("../assets/images/pokemon/tyranitar-back.gif"),
       sprite: require("../assets/images/pokemon/tyranitar-small.png"),
@@ -464,6 +469,7 @@ const pokemon_data: any = [
     {
       id: 16,
       label: "Scizor",
+      size: "medium",
       front: require("../assets/images/pokemon/scizor.gif"),
       back: require("../assets/images/pokemon/scizor-back.gif"),
       sprite: require("../assets/images/pokemon/scizor-small.png"),
@@ -494,6 +500,7 @@ const pokemon_data: any = [
     {
       id: 17,
       label: "Bayleef",
+      size: "medium",
       front: require("../assets/images/pokemon/bayleef.gif"),
       back: require("../assets/images/pokemon/bayleef-back.gif"),
       sprite: require("../assets/images/pokemon/bayleef-small.png"),
@@ -524,6 +531,7 @@ const pokemon_data: any = [
     {
       id: 18,
       label: "Feraligatr",
+      size: "medium",
       front: require("../assets/images/pokemon/feraligatr.gif"),
       back: require("../assets/images/pokemon/feraligatr-back.gif"),
       sprite: require("../assets/images/pokemon/feraligatr-small.png"),
@@ -554,6 +562,7 @@ const pokemon_data: any = [
     {
       id: 19,
       label: "Quilava",
+      size: "medium",
       front: require("../assets/images/pokemon/quilava.gif"),
       back: require("../assets/images/pokemon/quilava-back.gif"),
       sprite: require("../assets/images/pokemon/quilava-small.png"),
@@ -584,6 +593,7 @@ const pokemon_data: any = [
     {
       id: 20,
       label: "Metagross",
+      size: "medium",
       front: require("../assets/images/pokemon/metagross.gif"),
       back: require("../assets/images/pokemon/metagross-back.gif"),
       sprite: require("../assets/images/pokemon/metagross-small.png"),
@@ -615,6 +625,7 @@ const pokemon_data: any = [
     {
       id: 21,
       label: "Salamence",
+      size: "medium",
       front: require("../assets/images/pokemon/salamence.gif"),
       back: require("../assets/images/pokemon/salamence-back.gif"),
       sprite: require("../assets/images/pokemon/salamence-small.png"),
@@ -638,11 +649,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 2
-      }
+      },
+      total_hp: 394,
+      current_hp: 394
     },
     {
       id: 22,
       label: "Torchic",
+      size: "small",
       front: require("../assets/images/pokemon/torchic.gif"),
       back: require("../assets/images/pokemon/torchic-back.gif"),
       sprite: require("../assets/images/pokemon/torchic-small.png"),
@@ -666,11 +680,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 364,
+      current_hp: 364
     },
     {
       id: 23,
       label: "Swampert",
+      size: "medium",
       front: require("../assets/images/pokemon/swampert.gif"),
       back: require("../assets/images/pokemon/swampert-back.gif"),
       sprite: require("../assets/images/pokemon/swampert-small.png"),
@@ -694,11 +711,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 1
-      }
+      },
+      total_hp: 404,
+      current_hp: 404
     },
     {
       id: 24,
       label: "Grovyle",
+      size: "medium",
       front: require("../assets/images/pokemon/grovyle.gif"),
       back: require("../assets/images/pokemon/grovyle-back.gif"),
       sprite: require("../assets/images/pokemon/grovyle-small.png"),
@@ -722,11 +742,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 304,
+      current_hp: 304
     },
     {
       id: 25,
       label: "Regice",
+      size: "medium",
       front: require("../assets/images/pokemon/regice.gif"),
       back: require("../assets/images/pokemon/regice-back.gif"),
       sprite: require("../assets/images/pokemon/regice-small.png"),
@@ -750,11 +773,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 2,
         fairy: 1
-      }
+      },
+      total_hp: 364,
+      current_hp: 364
     },
     {
       id: 26,
       label: "Darmanitan",
+      size: "medium",
       front: require("../assets/images/pokemon/darmanitan.gif"),
       back: require("../assets/images/pokemon/darmanitan-back.gif"),
       sprite: require("../assets/images/pokemon/darmanitan-small.png"),
@@ -778,11 +804,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 414,
+      current_hp: 414
     },
     {
       id: 27,
       label: "Gigalith",
+      size: "medium",
       front: require("../assets/images/pokemon/gigalith.gif"),
       back: require("../assets/images/pokemon/gigalith-back.gif"),
       sprite: require("../assets/images/pokemon/gigalith-small.png"),
@@ -806,11 +835,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 2,
         fairy: 1
-      }
+      },
+      total_hp: 374,
+      current_hp: 374
     },
     {
       id: 28,
       label: "Stoutland",
+      size: "medium",
       front: require("../assets/images/pokemon/stoutland.gif"),
       back: require("../assets/images/pokemon/stoutland-back.gif"),
       sprite: require("../assets/images/pokemon/stoutland-small.png"),
@@ -834,11 +866,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 374,
+      current_hp: 374
     },
     {
       id: 29,
       label: "Archeops",
+      size: "medium",
       front: require("../assets/images/pokemon/archeops.gif"),
       back: require("../assets/images/pokemon/archeops-back.gif"),
       sprite: require("../assets/images/pokemon/archeops-small.png"),
@@ -862,11 +897,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 2,
         fairy: 1
-      }
+      },
+      total_hp: 354,
+      current_hp: 354
     },
     {
       id: 30,
       label: "Carracosta",
+      size: "large",
       front: require("../assets/images/pokemon/carracosta.gif"),
       back: require("../assets/images/pokemon/carracosta-back.gif"),
       sprite: require("../assets/images/pokemon/carracosta-small.png"),
@@ -890,11 +928,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 352,
+      current_hp: 352
     },
     {
       id: 31,
       label: "Manectric",
+      size: "medium",
       front: require("../assets/images/pokemon/manectric.gif"),
       back: require("../assets/images/pokemon/manectric-back.gif"),
       sprite: require("../assets/images/pokemon/manectric-small.png"),
@@ -918,11 +959,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 1
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     },
     {
       id: 33,
       label: "Slaking",
+      size: "large",
       front: require("../assets/images/pokemon/slaking.gif"),
       back: require("../assets/images/pokemon/slaking-back.gif"),
       sprite: require("../assets/images/pokemon/slaking-small.png"),
@@ -946,11 +990,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 504,
+      current_hp: 504
     },
     {
       id: 34,
       label: "Mawile",
+      size: "small",
       front: require("../assets/images/pokemon/mawile.gif"),
       back: require("../assets/images/pokemon/mawile-back.gif"),
       sprite: require("../assets/images/pokemon/mawile-small.png"),
@@ -974,11 +1021,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 1,
         fairy: 0.5
-      }
+      },
+      total_hp: 304,
+      current_hp: 304
     },
     {
       id: 35,
       label: "Cacturne",
+      size: "small",
       front: require("../assets/images/pokemon/cacturne.gif"),
       back: require("../assets/images/pokemon/cacturne-back.gif"),
       sprite: require("../assets/images/pokemon/cacturne-small.png"),
@@ -1002,11 +1052,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 1,
         fairy: 2
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     },
     {
       id: 36,
       label: "Flygon",
+      size: "medium",
       front: require("../assets/images/pokemon/flygon.gif"),
       back: require("../assets/images/pokemon/flygon-back.gif"),
       sprite: require("../assets/images/pokemon/flygon-small.png"),
@@ -1030,11 +1083,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 2
-      }
+      },
+      total_hp: 364,
+      current_hp: 364
     },
     {
       id: 37,
       label: "Staraptor",
+      size: "medium",
       front: require("../assets/images/pokemon/staraptor.gif"),
       back: require("../assets/images/pokemon/staraptor-back.gif"),
       sprite: require("../assets/images/pokemon/staraptor-small.png"),
@@ -1058,11 +1114,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 374,
+      current_hp: 374
     },
     {
       id: 38,
       label: "Luxray",
+      size: "medium",
       front: require("../assets/images/pokemon/luxray.gif"),
       back: require("../assets/images/pokemon/luxray-back.gif"),
       sprite: require("../assets/images/pokemon/luxray-small.png"),
@@ -1086,11 +1145,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 1
-      }
+      },
+      total_hp: 364,
+      current_hp: 364
     },
     {
       id: 39,
       label: "Toxicroak",
+      size: "medium",
       front: require("../assets/images/pokemon/toxicroak.gif"),
       back: require("../assets/images/pokemon/toxicroak-back.gif"),
       sprite: require("../assets/images/pokemon/toxicroak-small.png"),
@@ -1114,11 +1176,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 370,
+      current_hp: 370
     },
     {
       id: 40,
       label: "Weavile",
+      size: "small",
       front: require("../assets/images/pokemon/weavile.gif"),
       back: require("../assets/images/pokemon/weavile-back.gif"),
       sprite: require("../assets/images/pokemon/weavile-small.png"),
@@ -1142,11 +1207,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 2,
         fairy: 2
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     },
     {
       id: 41,
       label: "Magnezone",
+      size: "small",
       front: require("../assets/images/pokemon/magnezone.gif"),
       back: require("../assets/images/pokemon/magnezone-back.gif"),
       sprite: require("../assets/images/pokemon/magnezone-small.png"),
@@ -1170,11 +1238,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.25,
         fairy: 0.5
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     },
     {
       id: 42,
       label: "Electivire",
+      size: "large",
       front: require("../assets/images/pokemon/electivire.gif"),
       back: require("../assets/images/pokemon/electivire-back.gif"),
       sprite: require("../assets/images/pokemon/electivire-small.png"),
@@ -1198,11 +1269,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 1
-      }
+      },
+      total_hp: 354,
+      current_hp: 354
     },
     {
       id: 43,
       label: "Magmortar",
+      size: "large",
       front: require("../assets/images/pokemon/magmortar.gif"),
       back: require("../assets/images/pokemon/magmortar-back.gif"),
       sprite: require("../assets/images/pokemon/magmortar-small.png"),
@@ -1226,11 +1300,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 354,
+      current_hp: 354
     },
     {
       id: 44,
       label: "Musharna",
+      size: "small",
       front: require("../assets/images/pokemon/musharna.gif"),
       back: require("../assets/images/pokemon/musharna-back.gif"),
       sprite: require("../assets/images/pokemon/musharna-small.png"),
@@ -1254,11 +1331,14 @@ const pokemon_data: any = [
         dark: 2,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 436,
+      current_hp: 436
     },
     {
       id: 45,
       label: "Krookodile",
+      size: "medium",
       front: require("../assets/images/pokemon/krookodile.gif"),
       back: require("../assets/images/pokemon/krookodile-back.gif"),
       sprite: require("../assets/images/pokemon/krookodile-small.png"),
@@ -1282,11 +1362,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 1,
         fairy: 2
-      }
+      },
+      total_hp: 394,
+      current_hp: 394
     },
     {
       id: 46,
       label: "Braviary",
+      size: "medium",
       front: require("../assets/images/pokemon/braviary.gif"),
       back: require("../assets/images/pokemon/braviary-back.gif"),
       sprite: require("../assets/images/pokemon/braviary-small.png"),
@@ -1310,11 +1393,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 1,
         fairy: 1
-      }
+      },
+      total_hp: 404,
+      current_hp: 404
     },
     {
       id: 47,
       label: "Talonflame",
+      size: "medium",
       front: require("../assets/images/pokemon/talonflame.gif"),
       back: require("../assets/images/pokemon/talonflame-back.gif"),
       sprite: require("../assets/images/pokemon/talonflame-small.png"),
@@ -1338,11 +1424,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 360,
+      current_hp: 360
     },
     {
       id: 48,
       label: "Volcarona",
+      size: "small",
       front: require("../assets/images/pokemon/volcarona.gif"),
       back: require("../assets/images/pokemon/volcarona-back.gif"),
       sprite: require("../assets/images/pokemon/volcarona-small.png"),
@@ -1366,11 +1455,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 374,
+      current_hp: 374
     },
     {
       id: 49,
       label: "Galvantula",
+      size: "small",
       front: require("../assets/images/pokemon/galvantula.gif"),
       back: require("../assets/images/pokemon/galvantula-back.gif"),
       sprite: require("../assets/images/pokemon/galvantula-small.png"),
@@ -1394,11 +1486,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 1
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     },
     {
       id: 50,
       label: "Heracross",
+      size: "medium",
       front: require("../assets/images/pokemon/heracross.gif"),
       back: require("../assets/images/pokemon/heracross-back.gif"),
       sprite: require("../assets/images/pokemon/heracross-small.png"),
@@ -1422,11 +1517,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 1,
         fairy: 2
-      }
+      },
+      total_hp: 364,
+      current_hp: 364
     },
     {
       id: 51,
       label: "Genesect",
+      size: "medium",
       front: require("../assets/images/pokemon/genesect.gif"),
       back: require("../assets/images/pokemon/genesect-back.gif"),
       sprite: require("../assets/images/pokemon/genesect-small.png"),
@@ -1450,11 +1548,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 346,
+      current_hp: 346
     },
     {
       id: 52,
       label: "Xerneas",
+      size: "medium",
       front: require("../assets/images/pokemon/xerneas.gif"),
       back: require("../assets/images/pokemon/xerneas-back.gif"),
       sprite: require("../assets/images/pokemon/xerneas-small.png"),
@@ -1478,11 +1579,14 @@ const pokemon_data: any = [
         dark: 0.5,
         steel: 2,
         fairy: 1
-      }
+      },
+      total_hp: 456,
+      current_hp: 456
     },
     {
       id: 53,
       label: "Gardevoir",
+      size: "medium",
       front: require("../assets/images/pokemon/gardevoir.gif"),
       back: require("../assets/images/pokemon/gardevoir-back.gif"),
       sprite: require("../assets/images/pokemon/gardevoir-small.png"),
@@ -1506,11 +1610,14 @@ const pokemon_data: any = [
         dark: 1,
         steel: 2,
         fairy: 1
-      }
+      },
+      total_hp: 340,
+      current_hp: 340
     },
     {
       id: 54,
       label: "Escavalier",
+      size: "medium",
       front: require("../assets/images/pokemon/escavalier.gif"),
       back: require("../assets/images/pokemon/escavalier-back.gif"),
       sprite: require("../assets/images/pokemon/escavalier-small.png"),
@@ -1534,7 +1641,9 @@ const pokemon_data: any = [
         dark: 1,
         steel: 0.5,
         fairy: 0.5
-      }
+      },
+      total_hp: 344,
+      current_hp: 344
     }
 ];
   

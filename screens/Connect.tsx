@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { Audio } from "expo-av";
 import { socket } from "../connection/socket";
 import background from "../assets/background.png";
+import React, { useEffect, useState } from "react";
 import { ConnectProps } from "../routes/app.routes";
 import CardProfile from "../components/CardProfile/User";
 import { State, global, updateStore } from "../context/GlobalStates";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 
 export default function ConnectScreen({ navigation }: ConnectProps) {
   const [ready, setReady] = useState(false);
@@ -13,6 +14,7 @@ export default function ConnectScreen({ navigation }: ConnectProps) {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
+    playSound();
     if (socket.connected) {
       onConnect();
     }
@@ -46,6 +48,13 @@ export default function ConnectScreen({ navigation }: ConnectProps) {
     }
   }, [loading]);
 
+  async function playSound() {
+    const { sound } = await Audio.Sound.createAsync(
+      require("../assets/audios/select.mp3")
+    );
+    await sound.playAsync();
+  }
+
   function sendMessage() {
     let message = store.player;
     socket.emit("ready", message);
@@ -59,15 +68,13 @@ export default function ConnectScreen({ navigation }: ConnectProps) {
       </View>
 
       <View style={styles.main}>
-     
-          <CardProfile
-            pokemonList={store.player.team}
-            onPress={sendMessage}
-            name={store.player.username}
-            ready={ready}
-            status={isConnected ? "connected" : "disconnected"}
-          />
-        
+        <CardProfile
+          pokemonList={store.player.team}
+          onPress={sendMessage}
+          name={store.player.username}
+          ready={ready}
+          status={isConnected ? "connected" : "disconnected"}
+        />
 
         {isConnected && store.opponent.username !== "" && (
           <CardProfile

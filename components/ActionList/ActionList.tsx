@@ -26,10 +26,10 @@ const ActionList = () => {
     {
       label: "None",
       action: () => {
-        updateStore((state: State) => {
-          state.player.move = "select-move";
-          state.your_turn = !store.your_turn;
-        });
+        // updateStore((state: State) => {
+        //   state.player.move = "select-move";
+        //   state.your_turn = !store.your_turn;
+        // });
       },
     },
     {

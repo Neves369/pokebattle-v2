@@ -32,7 +32,7 @@ const CardProfile = ({
     >
       <Text style={styles.title}>{name}</Text>
       <Text style={styles.text}>{status}</Text>
-      <Text style={styles.text}>{ready ? "Let's Go" : ""}</Text>
+      <Text style={styles.status}>{ready ? "Let's Go" : ""}</Text>
       <View style={styles.team}>
         {pokemonList.map((pokemon, index) => (
           <Image
@@ -74,4 +74,11 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     color: "#333",
   },
+  status: {
+    position: "absolute",
+    right: 5,
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "#fdfdfd",
+  }
 });

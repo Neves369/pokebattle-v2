@@ -49,7 +49,6 @@ io.on('connection', (socket) => {
   // Receber ações durante a batalha
   socket.on('battleAction', ({ battleId, action }) => {
     if (!battles[battleId]) return;
-    console.log(`Ação recebida: ${battleId}`, action);
 
     const battle = battles[battleId];
     const opponentId = Object.keys(battle.players).find(id => id !== socket.id);
@@ -68,6 +67,30 @@ io.on('connection', (socket) => {
     // Atualizar ambos os jogadores sobre o novo turno com `true` e `false`
     io.to(socket.id).emit('updateTurn', { myTurn: false });
     io.to(opponentId).emit('updateTurn', { myTurn: true });
+  });
+
+  // Trocar de pokemon
+  socket.on('switch', ({ battleId, pokemon }) => {
+      if (!battles[battleId]) return;
+      console.log(`Ação recebida: ${battleId}`, action);
+  
+      const battle = battles[battleId];
+      const opponentId = Object.keys(battle.players).find(id => id !== socket.id);
+  
+      if (battle.turn !== socket.id) {
+        socket.emit('error', 'Não é seu turno!');
+        return;
+      }
+  
+      // Enviar ação para o oponente
+      io.to(opponentId).emit('switch', pokemon);
+  
+      // Trocar turno
+      battle.turn = opponentId;
+  
+      // Atualizar ambos os jogadores sobre o novo turno com `true` e `false`
+      io.to(socket.id).emit('updateTurn', { myTurn: false });
+      io.to(opponentId).emit('updateTurn', { myTurn: true });
   });
 
   // Quando um jogador se desconectar
